@@ -1,2 +1,13 @@
 # Archieve
 Archieve/
+
+# temporal tex related files
+*.aux
+*.log
+*.out
+*tex.gz
+
+
+
+# misc
+.Rhistory
