@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[hidelinks,letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -84,11 +84,13 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Southern California}{Los Angeles, CA}
-      {Ph.D. in Neuroscience}{Jul. 2011 -- Aug. 2017}
+      {Ph.D. in Neuroscience;  \href{http://jn.physiology.org/content/116/5/2342}{Published 2 top-journal articles}}{Jul. 2011 -- Aug. 2017}
     \resumeSubheading
       {Tsinghua University}{Beijing, China}
-      {Bachelor of Science in Physics}{Jul. 2007 -- Jul. 2011}
+      {Bachelor of Science in Physics; \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.160403}{Published 1 top-journal article}}{Jul. 2007 -- Jul. 2011}
   \resumeSubHeadingListEnd
+
+
 
 
 %-----------EXPERIENCE-----------------
@@ -100,16 +102,40 @@
       {Product Development Engineer Intern}{Summer 2015 \& Spring 2016}
       \resumeItemListStart
         \resumeItem{Summary}
-          {Worked with software engineer team to develop applications to record, analyze, report human (healthy and post-stroke individuals) movement performance during Kinect video games and exercises}
+          {Worked with software engineer team to develop applications to record, analyze, report human (healthy and post-stroke individuals) movement performance during \underline{Kinect} video games and exercises}
         \resumeItem{Data Acquisition and Smoothing}
-          {Implemented an application to acquire Kinect skeleton data, smooth it with a spike removal filter and an Unscented Kalman Filter (Matlab \& C\#)}
+          {Implemented an application to acquire Kinect skeleton data, smooth it with a spike removal filter and an Unscented \underline{Kalman Filter} (Matlab \& C\#)}
         \resumeItem{Human Joint Angle Inference}
           {Implemented an application to calculate human anatomical joint angles from Kinect skeleton data (Matlab \& C\#)}
         \resumeItem{Web Application}
-          {Designed and implemented a web application to report full kinematics performance history to users and physical therapists (R, Shiny \& SQL)}
+          {Designed and implemented a web application to report full kinematics performance history to users and physical therapists (\underline{R, Shiny \& SQL})}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
+
+\section{Data Science Projects}
+\resumeSubHeadingListStart
+
+\resumeItem{Customer Churn Prediction in Telecommunication Industry}{}
+\resumeItemListStart
+\resumeItem{Summary}{Developed algorithms to predict customer churn probability based on labeled data via Python and Spark}
+\resumeItem{Models}{Trained supervised learning models, including \underline{Logistic Regression}, \underline{Random Forest} and \underline{KNN} with parameter regularization}
+\resumeItem{Evaluation}{Evaluated model performance via k-fold \underline{cross validation} and confusion matrix}
+\resumeItem{Feature selection}{Analyzed feature importance to identify most significant factors}
+\resumeItemListEnd
+
+\resumeItem{Natural Language Processing and Topic Modeling}{}
+\resumeItemListStart
+\resumeItem{Summary}{Clustered unlabeled textual documents into groups and inferred latent semantic structures via Python}
+\resumeItem{Preprocessing}{Preprocessed text by tokenizing, stemming and stopwords removing, and extracted features by Term Frequency-Inverse Document Frequency (\underline{TF-IDF}) approach}
+\resumeItem{Models}{Trained unsupervised learning models: \underline{K-means} Clustering and \underline{Latent Dirichlet Allocation} (LDA)}
+\resumeItem{Results}{Identified latent topics and keywords of each document for clustering and calculated document similarity}
+\resumeItem{Visualization}{Visualized results by \underline{Principal Component Analysis} (PCA)}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
 
 
 %-----------PROJECTS-----------------
@@ -119,47 +145,25 @@
     \resumeItem{Human Movement Simulation}
       {Simulated human arm movement in state space with 2-link arm model, via Optimal Control theory implemented by iterative Linear-Quadratic Regulator and Dynamic Programming in Matlab to investigate how movement accuracy affects velocity}
     \resumeItem{Human Movement Performance Analysis}
-      {(1) Analyzed 5+GB kinematics data from Armeo@Spring in csv files from 50+ users in Matlab; and (2) Organized 5+GB kinematics data from 40+ users in text files format into mySQL database and analyzed in R to investigate how movement patterns correlate with stroke recovery}
+      {(1) Analyzed 5+GB kinematics data from Armeo@Spring in csv files from 50+ users in Matlab; and (2) Organized 5+GB kinematics data from 40+ users in text files format into \underline{mySQL} database (therefore increased efficiency by 1000 folds) and analyzed in R to investigate how movement patterns correlate with stroke recovery}
     \resumeItem{Human Movement Performance Modeling}
-      {Developed dynamical State Space Model with mixed effects to investigate the effects of rehabilitation training, to customize training schedule and predict future performance for each individual}
+      {Developed dynamical \underline{State Space Model with mixed effects} to investigate the effects of rehabilitation training, to customize training schedule and predict future performance for each individual}
     
   \resumeSubHeadingListEnd
   
 
-\section{Data Science Projects}
-  \resumeSubHeadingListStart
-
-	\resumeItem{Customer Churn Prediction in Telecommunication Industry}{}
-		\resumeItemListStart
-			\resumeItem{Summary}{Developed algorithms to predict customer churn probability based on labeled data via Python and Spark}
-			\resumeItem{Models}{Trained supervised learning models, including logistic regression, random forest and KNN with parameter regularization}
-			\resumeItem{Evaluation}{Evaluated model performance via k-fold cross validation and confusion matrix}
-			\resumeItem{Feature selection}{Analyzed feature importance to identify most significant factors}
-		\resumeItemListEnd
-
-	\resumeItem{Natural Language Processing and Topic Modeling}{}
-		\resumeItemListStart
-			\resumeItem{Summary}{Clustered unlabeled textual documents into groups and inferred latent semantic structures via Python}
-			\resumeItem{Preprocessing}{Preprocessed text by tokenizing, stemming and stopwords removing, and extracted features by Term Frequency-Inverse Document Frequency (TF-IDF) approach}
-			\resumeItem{Models}{Trained unsupervised learning models: K-means Clustering and Latent Dirichlet Allocation (LDA)}
-			\resumeItem{Results}{Identified latent topics and keywords of each document for clustering and calculated document similarity}
-			\resumeItem{Visualization}{Visualized results by Principal Component Analysis (PCA)}
-		\resumeItemListEnd
-
-	
-  \resumeSubHeadingListEnd
 
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Languages}{: R, Python, Java, C\#, C++, SQL, Matlab, Mathmetica}
-  	}
-	\item{
-	  \textbf{Technologies}{: Git, AWS, Kinect, CKAN, Heroku}
-  	}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\item{
+	\textbf{Languages}{: R, Python, Java, C\#, C++, SQL, Matlab, Mathmetica}
+}
+\item{
+	\textbf{Technologies}{: Git, Shiny, mySQL, AWS, Kinect, CKAN, Heroku}
+}
+\resumeSubHeadingListEnd
 
 
 %-------------------------------------------
