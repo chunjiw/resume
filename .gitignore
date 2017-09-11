@@ -1,5 +1,6 @@
 # Archieve
 Archieve/
+*.docx
 
 # temporal tex related files
 *.aux

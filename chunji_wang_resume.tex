@@ -93,67 +93,6 @@
 
 
 
-%-----------EXPERIENCE-----------------
-\section{Work Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Innovation Solutions}{Santa Ana, CA}
-      {Product Development Engineer Intern}{Summer 2015 \& Spring 2016}
-      \resumeItemListStart
-        \resumeItem{Summary}
-          {Worked with software engineer team to develop applications to record, analyze, report human (healthy and post-stroke individuals) movement performance during \underline{Kinect} video games and exercises}
-        \resumeItem{Data Acquisition and Smoothing}
-          {Implemented an application to acquire Kinect skeleton data, smooth it with a spike removal filter and an Unscented \underline{Kalman Filter} (Matlab \& C\#)}
-        \resumeItem{Human Joint Angle Inference}
-          {Implemented an application to calculate human anatomical joint angles from Kinect skeleton data (Matlab \& C\#)}
-        \resumeItem{Web Application}
-          {Designed and implemented a web application to report full kinematics performance history to users and physical therapists (\underline{R, Shiny \& SQL})}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-\section{Data Science Projects}
-\resumeSubHeadingListStart
-
-\resumeItem{Customer Churn Prediction in Telecommunication Industry}{}
-\resumeItemListStart
-\resumeItem{Summary}{Developed algorithms to predict customer churn probability based on labeled data via Python and Spark}
-\resumeItem{Models}{Trained supervised learning models, including \underline{Logistic Regression}, \underline{Random Forest} and \underline{KNN} with parameter regularization}
-\resumeItem{Evaluation}{Evaluated model performance via k-fold \underline{cross validation} and confusion matrix}
-\resumeItem{Feature selection}{Analyzed feature importance to identify most significant factors}
-\resumeItemListEnd
-
-\resumeItem{Natural Language Processing and Topic Modeling}{}
-\resumeItemListStart
-\resumeItem{Summary}{Clustered unlabeled textual documents into groups and inferred latent semantic structures via Python}
-\resumeItem{Preprocessing}{Preprocessed text by tokenizing, stemming and stopwords removing, and extracted features by Term Frequency-Inverse Document Frequency (\underline{TF-IDF}) approach}
-\resumeItem{Models}{Trained unsupervised learning models: \underline{K-means} Clustering and \underline{Latent Dirichlet Allocation} (LDA)}
-\resumeItem{Results}{Identified latent topics and keywords of each document for clustering and calculated document similarity}
-\resumeItem{Visualization}{Visualized results by \underline{Principal Component Analysis} (PCA)}
-\resumeItemListEnd
-
-
-\resumeSubHeadingListEnd
-
-
-
-%-----------PROJECTS-----------------
-\section{Research Projects}
-  \resumeSubHeadingListStart
-  
-    \resumeItem{Human Movement Simulation}
-      {Simulated human arm movement in state space with 2-link arm model, via Optimal Control theory implemented by iterative Linear-Quadratic Regulator and Dynamic Programming in Matlab to investigate how movement accuracy affects velocity}
-    \resumeItem{Human Movement Performance Analysis}
-      {(1) Analyzed 5+GB kinematics data from Armeo@Spring in csv files from 50+ users in Matlab; and (2) Organized 5+GB kinematics data from 40+ users in text files format into \underline{mySQL} database (therefore increased efficiency by 1000 folds) and analyzed in R to investigate how movement patterns correlate with stroke recovery}
-    \resumeItem{Human Movement Performance Modeling}
-      {Developed dynamical \underline{State Space Model with mixed effects} to investigate the effects of rehabilitation training, to customize training schedule and predict future performance for each individual}
-    
-  \resumeSubHeadingListEnd
-  
-
-
-
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
 \resumeSubHeadingListStart
@@ -164,6 +103,69 @@
 	\textbf{Technologies}{: Git, Shiny, mySQL, AWS, Kinect, CKAN, Heroku}
 }
 \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Innovation Solutions}{Santa Ana, CA}
+      {Product Development Engineer Intern}{Summer 2015 \& Spring 2016}
+      \resumeItemListStart
+        \resumeItem{Summary}
+          {Worked with software engineer team to develop applications to  \href{https://github.com/chunjiw/kinect-2-body-recorder}{record}, analyze and report human (healthy and post-stroke individuals) movement performance during \underline{Kinect} video games and exercises.}
+        \resumeItem{Data Acquisition and Smoothing}
+          {Implemented an application to acquire Kinect skeleton data, smooth it with a spike removal filter and an Unscented \underline{Kalman Filter} (Matlab \& C\#). More than 90\% of the noise and spikes are filtered out.}
+        \resumeItem{Human Joint Angle Inference}
+          {Implemented an application to calculate human anatomical joint angles from Kinect skeleton data (Matlab \& C\#), allowing further analysis of human movement patterns in anatomical terms.}
+        \resumeItem{Web Application}
+          {Designed and implemented a web application to report full kinematics performance history to users and physical therapists (\underline{R, Shiny \& SQL}).}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\section{Data Science Projects}
+\resumeSubHeadingListStart
+
+\resumeItem{Customer Churn Prediction in Telecommunication Industry}{}
+\resumeItemListStart
+\resumeItem{Summary}{Developed algorithms to predict customer churn probability based on labeled data via Python and Spark.}
+\resumeItem{Models}{Trained supervised learning models, including \underline{Logistic Regression}, \underline{Random Forest} and \underline{KNN} with parameter regularization.}
+\resumeItem{Evaluation}{Evaluated model performance via k-fold \underline{cross validation} and confusion matrix.}
+\resumeItem{Feature selection}{Analyzed feature importance to identify most significant factors.}
+\resumeItemListEnd
+
+\resumeItem{Natural Language Processing Projects}{}
+
+
+
+\resumeItemListStart
+
+\resumeItem{\href{https://chunjiw.shinyapps.io/wordpred/}{Word Prediction}}{{Developed} an app enabling prediction of most likely following words in real time while a user is typing. Tokenized 2GB text data to train a \underline{ngram} model. Deployed the app via \underline{Shiny} framework.}
+
+\resumeItem{Topic Modeling}{Grouped unlabeled textual documents and inferred latent semantic structures via Python. {Features extracted} by Term Frequency - Inverse Document Frequency (\underline{TF-IDF}). {Trained} \underline{K-means} and {Latent Dirichlet Allocation}(\underline{LDA}) models. {Identified} latent topics and keywords of each document for clustering and calculated document similarity. Visualized results by {Principal Component Analysis} (\underline{PCA}).}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Research Projects}
+  \resumeSubHeadingListStart
+  
+    \resumeItem{Human Movement Simulation}
+      {Simulated human arm movement in state space with 2-link arm model, via Optimal Control theory implemented by iterative Linear-Quadratic Regulator and Dynamic Programming in Matlab to investigate how movement accuracy affects velocity.}
+    \resumeItem{Human Movement Performance Analysis}
+      {(1) Analyzed 5+GB kinematics data from Armeo@Spring in csv files from 50+ users in Matlab; and (2) Organized 5+GB kinematics data from 40+ users in text files format into \underline{mySQL} database (therefore increased efficiency by 1000 folds) and analyzed in R to investigate how movement patterns correlate with stroke recovery.}
+    \resumeItem{Human Movement Performance Modeling}
+      {Developed dynamical \underline{State Space Model with mixed effects} to investigate the effects of rehabilitation training, therefore allowing customization of training schedule and prediction of future performance for each individual.}
+    
+  \resumeSubHeadingListEnd
+  
+
+
+
 
 
 %-------------------------------------------
