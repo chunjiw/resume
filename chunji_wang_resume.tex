@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[hidelinks,letterpaper,11pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -30,7 +30,7 @@
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
-\urlstyle{same}
+%\urlstyle{same}
 
 \raggedbottom
 \raggedright
@@ -94,16 +94,19 @@
 
 
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+\section{Skills}
+
 \resumeSubHeadingListStart
 \item{
-	\textbf{Languages}{: R, Python, Java, C\#, C++, SQL, Matlab, Mathmetica}
+	\textbf{Theories}{: Machine Learning, Dynamical System, Scientific/Numeric Computing}
 }
 \item{
-	\textbf{Technologies}{: Git, Shiny, mySQL, AWS, Kinect, CKAN, Heroku}
+	\textbf{Languages}{: R, Python, Matlab, SQL, Java, C\#, C++, Mathmetica}
 }
+\item{
+	\textbf{Technologies}{: Git, Shiny, mySQL, Spark, AWS, Kinect, CKAN, Heroku}
+} 
 \resumeSubHeadingListEnd
-
 
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
@@ -128,12 +131,11 @@
 \section{Data Science Projects}
 \resumeSubHeadingListStart
 
-\resumeItem{Customer Churn Prediction in Telecommunication Industry}{}
+\resumeItem{Regression and Prediction Projects}{}%Customer Churn Prediction in Telecommunication Industry}{}
 \resumeItemListStart
-\resumeItem{Summary}{Developed algorithms to predict customer churn probability based on labeled data via Python and Spark.}
-\resumeItem{Models}{Trained supervised learning models, including \underline{Logistic Regression}, \underline{Random Forest} and \underline{KNN} with parameter regularization.}
-\resumeItem{Evaluation}{Evaluated model performance via k-fold \underline{cross validation} and confusion matrix.}
-\resumeItem{Feature selection}{Analyzed feature importance to identify most significant factors.}
+
+\resumeItem{Customer Churn Prediction}{ Developed algorithms to predict customer churn probability based on labeled data via Python and Spark. Used \underline{Logistic Regression}, \underline{Random Forest} and \underline{KNN} with parameter regularization. Model evaluated via \underline{Cross Validation}.  Analyzed feature importance to identify most significant factors.}
+
 \resumeItemListEnd
 
 \resumeItem{Natural Language Processing Projects}{}
@@ -142,9 +144,9 @@
 
 \resumeItemListStart
 
-\resumeItem{\href{https://chunjiw.shinyapps.io/wordpred/}{Word Prediction}}{{Developed} an app enabling prediction of most likely following words in real time while a user is typing. Tokenized 2GB text data to train a \underline{ngram} model. Deployed the app via \underline{Shiny} framework.}
+\resumeItem{\href{https://chunjiw.shinyapps.io/wordpred/}{Word Prediction}}{{Developed} an app enabling prediction of most likely following words in real time while a user is typing. Tokenized 2GB text data to train an \underline{ngram} model. Deployed the app via \underline{Shiny} framework.}
 
-\resumeItem{Topic Modeling}{Grouped unlabeled textual documents and inferred latent semantic structures via Python. {Features extracted} by Term Frequency - Inverse Document Frequency (\underline{TF-IDF}). {Trained} \underline{K-means} and {Latent Dirichlet Allocation}(\underline{LDA}) models. {Identified} latent topics and keywords of each document for clustering and calculated document similarity. Visualized results by {Principal Component Analysis} (\underline{PCA}).}
+\resumeItem{Topic Modeling}{Grouped unlabeled textual documents and inferred latent semantic structures via Python. { Extracted features} by Term Frequency - Inverse Document Frequency (\underline{TF-IDF}). {Trained} \underline{K-means} and {Latent Dirichlet Allocation}(\underline{LDA}) models. {Identified} latent topics and keywords of each document for clustering and calculated document similarity. Visualized results by {Principal Component Analysis} (\underline{PCA}).}
 
 \resumeItemListEnd
 
@@ -157,7 +159,7 @@
     \resumeItem{Human Movement Simulation}
       {Simulated human arm movement in state space with 2-link arm model, via Optimal Control theory implemented by iterative Linear-Quadratic Regulator and Dynamic Programming in Matlab to investigate how movement accuracy affects velocity.}
     \resumeItem{Human Movement Performance Analysis}
-      {(1) Analyzed 5+GB kinematics data from Armeo@Spring in csv files from 50+ users in Matlab; and (2) Organized 5+GB kinematics data from 40+ users in text files format into \underline{mySQL} database (therefore increased efficiency by 1000 folds) and analyzed in R to investigate how movement patterns correlate with stroke recovery.}
+      {(1) Analyzed 5+GB kinematics data from Armeo@Spring in csv files from 50+ users in Matlab; and (2) Organized 5+GB kinematics data from 40+ users in text files format into \underline{mySQL} database (therefore increased performance by 1000 folds) and analyzed in R to investigate how movement patterns correlate with stroke recovery.}
     \resumeItem{Human Movement Performance Modeling}
       {Developed dynamical \underline{State Space Model with mixed effects} to investigate the effects of rehabilitation training, therefore allowing customization of training schedule and prediction of future performance for each individual.}
     
