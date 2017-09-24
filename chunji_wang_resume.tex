@@ -84,10 +84,10 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Southern California}{Los Angeles, CA}
-      {Ph.D. in Neuroscience}{Jul. 2011 -- Aug. 2017}
+      {Ph.D. in Neuroscience;  \href{http://jn.physiology.org/content/116/5/2342}{Published 2 top-journal articles}}{Jul. 2011 -- Aug. 2017}
     \resumeSubheading
       {Tsinghua University}{Beijing, China}
-      {Bachelor of Science in Physics}{Jul. 2007 -- Jul. 2011}
+      {Bachelor of Science in Physics; \href{https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.160403}{Published 1 top-journal article}}{Jul. 2007 -- Jul. 2011}
   \resumeSubHeadingListEnd
 
 
@@ -114,7 +114,7 @@
         \resumeItem{Summary}
           {Developed applications to {record}, analyze and report human movement kinematics and performance during \underline{Kinect} video games and exercises.}
         \resumeItem{Data Acquisition}
-          {Implemented \href{https://github.com/chunjiw/kinect-2-body-recorder} {an application} to acquire Kinect skeleton data, smooth it with a spike removal filter and an Unscented \underline{Kalman Filter} (Matlab \& C\#). $\sim$ 90\% of noise and spikes are filtered out.}
+          {Implemented {an application} \href{https://github.com/chunjiw/kinect-2-body-recorder}{\textsf{body-recorder}} to acquire Kinect skeleton data and smooth it with an Unscented \underline{Kalman Filter} (Matlab \& C\#). $\sim$ 90\% of noise and spikes are filtered out.}
         \resumeItem{Data Analysis}
           {Implemented an application to calculate human anatomical joint angles from Kinect skeleton data (Matlab \& C\#), allowing further analysis of human movement patterns in anatomical terms.}
         \resumeItem{Report and Visualization}
@@ -131,7 +131,7 @@
 
 
 %-----------PROJECTS-----------------
-\section{Research Experience}
+\section{Research Projects}
   \resumeSubHeadingListStart
   	
   \resumeItem{Human Movement Analysis:}{}
@@ -147,19 +147,16 @@
     \resumeItem{Customer Churn Prediction}
       { Developed regression, tree-based and KNN algorithms to predict customer churn probability based on labeled data via \underline{Python and Spark}. Achieved more than 90\% accuracy.}
     \resumeItem{{Word Prediction}}
-      {{Developed} an application to predict the most likely following word in real time while a user is typing. Tokenized 2GB text data to train an \underline{ngram} model. Deployed the \href{https://chunjiw.shinyapps.io/wordpred/} {application} via \underline{Shiny} framework.}
+      {{Developed} an application \href{https://chunjiw.shinyapps.io/wordpred/}{\textsf{wordpred}} to predict the most likely following word in real time while a user is typing. Tokenized 2GB text data to train an \underline{ngram} model. Deployed via \underline{Shiny} framework.}
     
+    \resumeItem{Topic Modeling}
+      {Grouped unlabeled textual documents and inferred latent semantic structures via Python. { Extracted features} by Term Frequency - Inverse Document Frequency (\underline{TF-IDF}). {Trained} \underline{K-means} and {Latent Dirichlet Allocation}(\underline{LDA}) models. {Identified} latent topics and keywords of each document for clustering and calculated document similarity. Visualized results by {Principal Component Analysis} (\underline{PCA}).}
+    
+    \resumeItem{Customized Vocabulary Review}
+      {Wrote an \href{https://apps.ankiweb.net/}{Anki} add-on \href{https://github.com/chunjiw/your-ebbinghaus}{\textsf{your-ebbinghaus}} to automatically generate vocabulary cards for review with one click. The add-on extracts new words from Google Search History via ``define" keyword; queries definitions through \href{https://developer.oxforddictionaries.com/}{Oxford Dictionary API}; generates cards with \textsf{html} format. }
     
   \resumeSubHeadingListEnd
   
-
-\section{Publications}
-\begin{itemize}[label=$\circ$]
-	\setlength\itemsep{-0.2em}
-	\item {Oct 2010 -- Chunji Wang et al., \emph{Physical Review Letters}, 105, 160403}
-	\item {Nov 2016 -- Chunji Wang et al., \emph{Journal of Neurophysiology}, Vol. 116 no. 5, 2342-2345}
-	\item {Nov 2015 -- Clarisa A. Martinez, Chunji Wang, \emph{Journal of Neurophysiology}, Vol. 114 no. 5, 2555-2557}
-\end{itemize}
 
 
 
