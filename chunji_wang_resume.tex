@@ -44,12 +44,14 @@
 %-------------------------
 % commands note - Chunji Wang 2017
 % \vspace: add vertical white space
+% only used two customized command: 
+% \resumeItem[2] and \resumeSubheading[4]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+  \item{
+    \textbf{#1: }{\small #2 \vspace{-2pt}}
   }
 }
 
@@ -64,8 +66,6 @@
   \vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
-
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
@@ -75,9 +75,8 @@
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
+
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
@@ -85,7 +84,6 @@
   \href{mailto:chunjiw@gmail.com}{\textsf{chunjiw@gmail.com}}, 
   \href{https://github.com/chunjiw}{\textsf{github.com/chunjiw}} & (213) 344-7935 \\
 \end{tabular*}
-
 
 
 %-----------EDUCATION-----------------
@@ -100,21 +98,19 @@
   \resumeSubHeadingListEnd
 
 
-
 %--------PROGRAMMING SKILLS------------
 \section{Skills}
+  \resumeSubHeadingListStart
+    \setlength\itemsep{-0.2em}
+    \resumeItem{Theories}{Machine Learning, Natural Language Processing (NLP), Deep Learning, Scientific Computing}
+    \resumeItem{Languages}{Python, R, Matlab, SQL, Java, Mathematica, C\#}
+    \resumeItem{Technologies}{Git, Shiny, MySQL, Spark, Kinect, CKAN, AWS, Linux}
+  \resumeSubHeadingListEnd
 
-\resumeSubHeadingListStart
-\setlength\itemsep{-0.2em}
-\item{	\textbf{Theories}{: Machine Learning, Natural Language Processing (NLP), Deep Learning, Scientific Computing}}
-\item{	\textbf{Languages}{: Python, R, Matlab, SQL, Java, Mathematica, C\#}}
-\item{	\textbf{Technologies}{: Git, Shiny, MySQL, Spark, Kinect, CKAN, AWS, Linux}} 
-\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
       {Innovation Solutions}{Santa Ana, CA,}
       {Data Scientist Intern}{2015/06 -- 2016/05}
@@ -122,7 +118,7 @@
         \resumeItem{Summary}
           {Developed applications to {record}, analyze and report human movement kinematics and performance during {Kinect} video games and exercises.}
         \resumeItem{Data Acquisition}
-          {Implemented {an application} \href{https://github.com/chunjiw/kinect-2-body-recorder}{\textsf{body-recorder}} to acquire Kinect skeleton data and smooth it with an Unscented {Kalman Filter} (Matlab \& C\#). $\sim$ 90\% of noise and spikes are filtered out.}
+          {Implemented an \href{https://github.com/chunjiw/kinect-2-body-recorder}{\textsf{body recorder application}} to acquire Kinect skeleton data and smooth it with an Unscented {Kalman Filter} (Matlab \& C\#), which reduced signal noise by $\sim$ 90\%.}
         \resumeItem{Data Analysis}
           {Implemented an application to calculate human anatomical joint angles from Kinect skeleton data (Matlab \& C\#), allowing further analysis of human movement patterns in anatomical terms.}
         \resumeItem{Report and Visualization}
@@ -130,38 +126,36 @@
       \resumeItemListEnd
     
     \resumeSubheading{SixThirty Incubator}{Pasadena, CA,}{Data Scientist}{2015/07 -- 2016/08}
-          \resumeItemListStart
-              \resumeItem{CKAN}
-          {Set up CKAN Open Source Data Portal Platform in Linux environment; Deployed the platform onto AWS Cloud and Google Cloud, enabling SixThirty to publish and share datasets.}
-              \resumeItem{LA Crime Data Analysis}
+      \resumeItemListStart
+        \resumeItem{CKAN}
+          {Set up CKAN Open Source Data Portal Platform in Linux environment. Deployed the platform onto AWS Cloud and Google Cloud, enabling SixThirty to publish and share datasets.}
+        \resumeItem{LA Crime Data Analysis}
           {Analyzed ``LA SHERIFF CRIMES" Open Dataset with a linear model to predict crime rate based on location and time of the day.}
-        \resumeItemListEnd    
-
+      \resumeItemListEnd    
   \resumeSubHeadingListEnd
-
-
 
 
 %-----------PROJECTS-----------------
 \section{Research Projects}
-  \resumeSubHeadingListStart
-
-  
-  \resumeItem{Human Movement Analysis:}{}
-  \resumeItemListStart
-    \resumeItem{Movement Planning}
-      {Simulated human arm movement in state space via Optimal Control theory implemented by iterative Linear-Quadratic Regulator and {Dynamic Programming} in Matlab; Showed that a moderate movement velocity achieves the best accuracy.}
-    \resumeItem{Movement Learning}
-      {Analyzed 10+GB upper extremity kinematics data via Matlab, R, and SQL; Extracted movement patterns and variability patterns via PCA and other dimension reduction methods; Unraveled the relationship between movement patterns and movement learning. }
-    \resumeItem{Movement Learning Prediction}
-      {Developed dynamical {State Space Model with Mixed Effects} to investigate the effects of rehabilitation training, allowing customization of training schedule and prediction of future performance for each individual.}
-  \resumeItemListEnd
+  \resumeSubHeadingListStart 
+    \resumeSubheading{Human Movement Analysis:}{}{}{}
+    \resumeItemListStart
+      \resumeItem{Movement Planning}
+        {Simulated human arm movement in state space via Optimal Control Theory implemented by iterative Linear-Quadratic Regulator and {Dynamic Programming} in Matlab. Showed that a moderate movement velocity achieves better accuracy than a slow or fast velocity.}
+      \resumeItem{Movement Learning}
+        {Analyzed 10+GB upper extremity kinematics data via Matlab, R, and SQL. Extracted movement patterns and variability patterns via dimention reduction methods. Showed that healthy movement patterns facilitates movement learning and recovery. }
+      \resumeItem{Movement Learning Prediction}
+        {Developed dynamical {State Space Model with Mixed Effects} to investigate the effects of rehabilitation training, allowing customization of training schedule and prediction of future performance for each individual.}
+    \resumeItemListEnd
   	
+
+%-----------PROJECTS-----------------
+\section{Side Projects}
     \resumeItem{Customer Churn Prediction}
-      { Developed regression, tree-based, and KNN algorithms to predict customer churn probability based on labeled data via {Python and Spark}. Achieved more than 90\% accuracy.}
+      { Developed regression, tree-based, and KNN algorithms to predict customer churn probability based on labeled data via {Python and Spark}. Achieved higher than 90\% accuracy.}
 
     \resumeItem{{Word Prediction}}
-      {{Developed} an application \href{https://chunjiw.shinyapps.io/wordpred/}{\textsf{wordpred}} to predict the most likely following word in real time while a user is typing. Tokenized 2GB text data to train an {ngram} model. Deployed via {Shiny} framework.}
+      {{Developed} the application \href{https://chunjiw.shinyapps.io/wordpred/}{\textsf{wordpred}} to predict the most likely following word in real time while a user is typing. Tokenized 2GB text data to train an {ngram} model. Deployed via {Shiny} framework.}
     
     \resumeItem{Topic Modeling}
       {Grouped unlabeled textual documents and inferred latent semantic structures via Python. { Extracted features} by Term Frequency - Inverse Document Frequency ({TF-IDF}). {Trained} {K-means} and {Latent Dirichlet Allocation}({LDA}) models. {Identified} latent topics and keywords of each document for clustering and calculated document similarity. Visualized results by {Principal Component Analysis} ({PCA}).}
