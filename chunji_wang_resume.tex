@@ -118,7 +118,7 @@
         \resumeItem{Summary}
           {Developed applications to {record}, analyze and report human movement kinematics and performance during {Kinect} video games and exercises.}
         \resumeItem{Data Acquisition}
-          {Implemented an \href{https://github.com/chunjiw/kinect-2-body-recorder}{\textsf{body recorder application}} to acquire Kinect skeleton data and smooth it with an Unscented {Kalman Filter} (Matlab \& C\#), which reduced signal noise by $\sim$ 90\%.}
+          {Implemented a \href{https://github.com/chunjiw/kinect-2-body-recorder}{\textsf{body recorder application}} to acquire Kinect skeleton data and smooth it with an Unscented {Kalman Filter} (Matlab \& C\#), which reduced signal noise by $\sim$ 90\%.}
         \resumeItem{Data Analysis}
           {Implemented an application to calculate human anatomical joint angles from Kinect skeleton data (Matlab \& C\#), allowing further analysis of human movement patterns in anatomical terms.}
         \resumeItem{Report and Visualization}
@@ -136,35 +136,50 @@
 
 
 %-----------PROJECTS-----------------
-\section{Research Projects}
+\section{Data Science Projects}
   \resumeSubHeadingListStart 
-    \resumeSubheading{Human Movement Analysis:}{}{}{}
-    \resumeItemListStart
-      \resumeItem{Movement Planning}
-        {Simulated human arm movement in state space via Optimal Control Theory implemented by iterative Linear-Quadratic Regulator and {Dynamic Programming} in Matlab. Showed that a moderate movement velocity achieves better accuracy than a slow or fast velocity.}
-      \resumeItem{Movement Learning}
-        {Analyzed 10+GB upper extremity kinematics data via Matlab, R, and SQL. Extracted movement patterns and variability patterns via dimention reduction methods. Showed that healthy movement patterns facilitates movement learning and recovery. }
-      \resumeItem{Movement Learning Prediction}
-        {Developed dynamical {State Space Model with Mixed Effects} to investigate the effects of rehabilitation training, allowing customization of training schedule and prediction of future performance for each individual.}
-    \resumeItemListEnd
-  	
-
-%-----------PROJECTS-----------------
-\section{Side Projects}
+    \setlength\itemsep{-0.2em}
     \resumeItem{Customer Churn Prediction}
       { Developed regression, tree-based, and KNN algorithms to predict customer churn probability based on labeled data via {Python and Spark}. Achieved higher than 90\% accuracy.}
-
     \resumeItem{{Word Prediction}}
-      {{Developed} the application \href{https://chunjiw.shinyapps.io/wordpred/}{\textsf{wordpred}} to predict the most likely following word in real time while a user is typing. Tokenized 2GB text data to train an {ngram} model. Deployed via {Shiny} framework.}
-    
+      {{Developed} the application \href{https://chunjiw.shinyapps.io/wordpred/}{\textsf{wordpred}} to predict the most likely following word in real time while a user is typing. Tokenized 2GB text data to train an {ngram} model. Deployed via the {Shiny} framework.}
     \resumeItem{Topic Modeling}
       {Grouped unlabeled textual documents and inferred latent semantic structures via Python. { Extracted features} by Term Frequency - Inverse Document Frequency ({TF-IDF}). {Trained} {K-means} and {Latent Dirichlet Allocation}({LDA}) models. {Identified} latent topics and keywords of each document for clustering and calculated document similarity. Visualized results by {Principal Component Analysis} ({PCA}).}
+  \resumeSubHeadingListEnd
 
+
+%-----------PROJECTS-----------------
+\section{Research Projects}
+  \resumeSubHeadingListStart 
+    \setlength\itemsep{-0.2em}
+    \resumeItem{Movement Planning}
+      {Simulated human arm movement in state space via Optimal Control Theory implemented by iterative Linear-Quadratic Regulator and {Dynamic Programming} in Matlab. Showed that a moderate movement velocity achieves better accuracy than a slow or fast velocity.}
+    \resumeItem{Movement Learning}
+      {Analyzed 10+GB upper extremity kinematics data via Matlab, R, and SQL. Extracted movement patterns and variability patterns via dimension reduction methods. Showed that healthy movement patterns facilitate movement learning and recovery. }
+    \resumeItem{Movement Learning Prediction}
+      {Developed dynamical {State Space Model with Mixed Effects} to investigate the effects of rehabilitation training, allowing customization of training schedule and prediction of future performance for each individual.}
+
+    % \resumeItem{Customized Vocabulary Review}
+    %   {Wrote an \href{https://apps.ankiweb.net/}{Anki} add-on \href{https://github.com/chunjiw/vocabulous}{\textsf{vocabulous}} to automatically generate vocabulary cards for review with one click. The add-on extracts new words from Google Search History via ``define" keyword; queries definitions through \href{https://developer.oxforddictionaries.com/}{Oxford Dictionary API}.}
 
   \resumeSubHeadingListEnd
 
-%\section{Hobbies}
-%Reading, playing badminton, listening to musicals, recording audiobooks, watching standup comedies
+
+%-----------Publications-------------
+% \section{Publications}
+% \begin{itemize}[leftmargin=*]
+%   \setlength\itemsep{-0.2em}
+%   \item {\textbf{Wang C} et al. Spin-orbit coupled spinor Bose-Einstein condensates. \emph{Physical Review Letters}. 105, 160403}
+%   \item {\textbf{Wang C} et al. The duration of reaching movement is longer than predicted by minimum variance. \emph{Journal of Neurophysiology}. Vol.116 no.5, 2342-2345}
+%   \item {Martinez C, \textbf{Wang C}. Structural constraints on learning in the Neural Network. \emph{Journal of Neurophysiology}. Vol.114 no.5, 2555-2557}
+% \end{itemize}
+
+
+
+\section{Hobbies}
+\small{\href{https://www.goodreads.com/user/show/45921938-chunji-wang}{\textsf{Reading}}, playing badminton, listening to Broadway musicals, \href{http://www.ximalaya.com/10093874/profile}{\textsf{recording audiobooks}}, watching standup comedies}
+
+
 
 %-------------------------------------------
 \end{document}
