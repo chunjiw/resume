@@ -42,6 +42,10 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
+% commands note - Chunji Wang 2017
+% \vspace: add vertical white space
+
+%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
@@ -50,11 +54,14 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-1pt}
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+      \textbf{#1} \textit{\small #3} & {#2} \textit{\small #4} 
+ %     \\
+ %     \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+  \vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -75,7 +82,8 @@
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{\Large Chunji Wang} & Alhambra, CA 91803\\
-  \href{mailto:chunjiw@gmail.com}{\textsf{chunjiw@gmail.com}}, \href{https://github.com/chunjiw}{\textsf{github.com/chunjiw}} & (213) 344-7935 \\
+  \href{mailto:chunjiw@gmail.com}{\textsf{chunjiw@gmail.com}}, 
+  \href{https://github.com/chunjiw}{\textsf{github.com/chunjiw}} & (213) 344-7935 \\
 \end{tabular*}
 
 
@@ -84,13 +92,12 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Southern California}{Los Angeles, CA}
-      {Ph.D. in Neuroscience}{Jul. 2011 -- Aug. 2017}
+      {University of Southern California}{Los Angeles, CA,}
+      {Ph.D. in Neuroscience}{2011/07 -- 2017/08}
     \resumeSubheading
-      {Tsinghua University}{Beijing, China}
-      {Bachelor of Science in Physics} {Jul. 2007 -- Jul. 2011}
+      {Tsinghua University}{Beijing, China,}
+      {B.S. in Physics} {2007/07 -- 2011/07}
   \resumeSubHeadingListEnd
-
 
 
 
@@ -109,8 +116,8 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Innovation Solutions}{Santa Ana, CA}
-      {Data Scientist Intern}{Summer 2015 \& Spring 2016}
+      {Innovation Solutions}{Santa Ana, CA,}
+      {Data Scientist Intern}{2015/06 -- 2016/05}
       \resumeItemListStart
         \resumeItem{Summary}
           {Developed applications to {record}, analyze and report human movement kinematics and performance during {Kinect} video games and exercises.}
@@ -122,7 +129,7 @@
           {Designed and implemented a web application to report full kinematics performance history to users and physical therapists ({R, Shiny \& SQL}) with intuitive graphics.}
       \resumeItemListEnd
     
-    \resumeSubheading{SixThirty Incubator}{Pasadena, CA}{Data Scientist}{Jul 2015 -- Aug 2016}
+    \resumeSubheading{SixThirty Incubator}{Pasadena, CA,}{Data Scientist}{2015/07 -- 2016/08}
           \resumeItemListStart
               \resumeItem{CKAN}
           {Set up CKAN Open Source Data Portal Platform in Linux environment; Deployed the platform onto AWS Cloud and Google Cloud, enabling SixThirty to publish and share datasets.}
