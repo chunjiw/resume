@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[hidelinks,letterpaper,11pt]{article}
+\documentclass[hidelinks,letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -136,15 +136,17 @@
 
 
 %-----------PROJECTS-----------------
-\section{Data Science Projects}
+\section{Side Projects}
   \resumeSubHeadingListStart 
     % \setlength\itemsep{-0em}
     \resumeItem{Customer Churn Prediction}
-      { Developed regression, tree-based, and KNN algorithms to predict customer churn probability based on labeled data via {Python and Spark}. Achieved higher than 90\% accuracy.}
+      {Developed regression, tree-based, and KNN algorithms to predict customer churn probability based on labeled data via {Python and Spark}. Analyzed feature importance to identify most significant factors. Achieved higher than 90\% accuracy.}
     \resumeItem{{Word Prediction}}
       {{Developed} the application \href{https://chunjiw.shinyapps.io/wordpred/}{\textsf{wordpred}} to predict the most likely following word in real time while a user is typing. Tokenized 2GB text data to train an {ngram} model. Deployed via the {Shiny} framework.}
     \resumeItem{Topic Modeling}
       {Grouped unlabeled textual documents and inferred latent semantic structures via Python. { Extracted features} by Term Frequency - Inverse Document Frequency ({TF-IDF}). {Trained} {K-means} and {Latent Dirichlet Allocation}({LDA}) models. {Identified} latent topics and keywords of each document for clustering and calculated document similarity. Visualized results by {Principal Component Analysis} ({PCA}).}
+    \resumeItem{Customized Vocabulary Review}
+      {Wrote an \href{https://apps.ankiweb.net/}{Anki} add-on \href{https://github.com/chunjiw/vocabulous}{\textsf{vocabulous}} to automatically generate vocabulary cards for review with one click. The add-on extracts new words from Google Search History via ``define" keyword and queries definitions through \href{https://developer.oxforddictionaries.com/}{Oxford Dictionary API}.}
   \resumeSubHeadingListEnd
 
 
@@ -158,20 +160,16 @@
       {Analyzed 10+GB upper extremity kinematics data via Matlab, R, and SQL. Extracted movement patterns and variability patterns via dimension reduction methods. Showed that healthy movement patterns facilitate movement learning and recovery. }
     \resumeItem{Movement Learning Prediction}
       {Developed dynamical {State Space Model with Mixed Effects} to investigate the effects of rehabilitation training, allowing customization of training schedule and prediction of future performance for each individual.}
-
-    % \resumeItem{Customized Vocabulary Review}
-    %   {Wrote an \href{https://apps.ankiweb.net/}{Anki} add-on \href{https://github.com/chunjiw/vocabulous}{\textsf{vocabulous}} to automatically generate vocabulary cards for review with one click. The add-on extracts new words from Google Search History via ``define" keyword; queries definitions through \href{https://developer.oxforddictionaries.com/}{Oxford Dictionary API}.}
-
   \resumeSubHeadingListEnd
 
 
 % -----------Publications-------------
-% \section{Publications}
-%   \resumeSubHeadingListStart
-%     \item \small{\textbf{Wang C} et al. Spin-orbit coupled spinor Bose-Einstein condensates. \emph{Physical Review Letters}. 105, 160403}
-%     \item \small{\textbf{Wang C} et al. The duration of reaching movement is longer than predicted by minimum variance. \emph{Journal of Neurophysiology}. Vol.116 no.5, 2342-2345}
-%     \item \small{Martinez C, \textbf{Wang C}. Structural constraints on learning in the Neural Network. \emph{Journal of Neurophysiology}. Vol.114 no.5, 2555-2557}
-%   \resumeSubHeadingListEnd
+\section{Publications}
+  \resumeSubHeadingListStart
+    \item \small{\textbf{Wang C} et al. Spin-orbit coupled spinor Bose-Einstein condensates. \emph{Physical Review Letters}. 105, 160403}
+    \item \small{\textbf{Wang C} et al. The duration of reaching movement is longer than predicted by minimum variance. \emph{Journal of Neurophysiology}. Vol.116 no.5, 2342-2345}
+    \item \small{Martinez C, \textbf{Wang C}. Structural constraints on learning in the Neural Network. \emph{Journal of Neurophysiology}. Vol.114 no.5, 2555-2557}
+  \resumeSubHeadingListEnd
 
 
 
