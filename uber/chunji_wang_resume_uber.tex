@@ -1,0 +1,188 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[hidelinks,letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+%\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% commands note - Chunji Wang 2017
+% \vspace: add vertical white space
+% only used two customized command: 
+% \resumeItem[2] and \resumeSubheading[4]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1: }{\small #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \textit{\small #3} & {#2} \textit{\small #4} 
+ %     \\
+ %     \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+  \vspace{-5pt}
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Chunji Wang} & Los Angeles, CA 90025\\
+  \href{mailto:chunjiw@gmail.com}{\textsf{chunjiw@gmail.com}}, 
+  \href{https://github.com/chunjiw}{\textsf{github.com/chunjiw}} & (213) 344-7935 \\
+\end{tabular*}
+
+
+\section{Position of Interest}
+Sr. Data Scientist - Advanced Analytics in San Francisco
+
+Available in Sep, 2018
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Southern California}{Los Angeles, CA,}
+      {Ph.D. in Neuroscience}{2011/07 -- 2017/08}
+    \resumeSubheading
+      {Tsinghua University}{Beijing, China,}
+      {B.S. in Physics} {2007/07 -- 2011/07}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \setlength\itemsep{-0.2em}
+    \resumeItem{Theories}{Machine Learning, Natural Language Processing (NLP), Deep Learning, Statistics}
+    \resumeItem{Languages}{Python, R, Scala, Matlab, SQL, Java, Mathematica, C\#}
+    \resumeItem{Technologies}{Git, MySQL, Spark, AWS-EMR, Linux, Shiny, Kinect, CKAN}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Rule14 LLC}{Santa Monica, CA,}
+      {Data Scientist}{2017/10 -- present}
+      \resumeItemListStart
+        \resumeItem{Utility Load Forecast}
+          {Built utility load forecast models for millions of customers; integrated it with relational databases; automated back-end model training and testing.}
+        \resumeItem{Customer Churn Prediction}
+          {Built Random Forest models and Survival Analysis models to predict churn probabilities of millions of customers via Spark under Amazon EMR framework. }
+      \resumeItemListEnd
+
+  
+    \resumeSubheading
+      {Innovation Solutions}{Santa Ana, CA,}
+      {Data Scientist Intern}{2015/06 -- 2016/05}
+      \resumeItemListStart
+        \resumeItem{Summary}
+          {Developed applications to {record}, analyze and report human movement kinematics and performance during {Kinect} video games and exercises.}
+        \resumeItem{Data Acquisition}
+          {Implemented a \href{https://github.com/chunjiw/kinect-2-body-recorder}{\textsf{body recorder application}} to acquire Kinect skeleton data and smooth it with an Unscented {Kalman Filter} (Matlab \& C\#), which reduced signal noise by $\sim$ 90\%.}
+        \resumeItem{Data Analysis}
+          {Implemented an application to calculate human anatomical joint angles from Kinect skeleton data (Matlab \& C\#), allowing further analysis of human movement patterns in anatomical terms.}
+        \resumeItem{Report and Visualization}
+          {Designed and implemented a web application to report full kinematics performance history to users and physical therapists ({R, Shiny \& SQL}) with intuitive graphics.}
+      \resumeItemListEnd
+    
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Data Science Projects}
+  \resumeSubHeadingListStart 
+    % \setlength\itemsep{-0em}
+    \resumeItem{{Word Prediction}}
+      {{Developed} the application \href{https://chunjiw.shinyapps.io/wordpred/}{\textsf{wordpred}} to predict the most likely following word in real time while a user is typing. Tokenized 2GB text data to train an {ngram} model. Deployed via the {Shiny} framework.}
+    \resumeItem{Topic Modeling}
+      {Grouped unlabeled textual documents and inferred latent semantic structures via Python. { Extracted features} by Term Frequency - Inverse Document Frequency ({TF-IDF}). {Trained} {K-means} and {Latent Dirichlet Allocation}({LDA}) models. {Identified} latent topics and keywords of each document for clustering and calculated document similarity. Visualized results by {Principal Component Analysis} ({PCA}).}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Research Projects}
+  \resumeSubHeadingListStart 
+    % \setlength\itemsep{-0.1em}
+    \resumeItem{Movement Planning}
+      {Simulated human arm movement in state space via Optimal Control Theory implemented by iterative Linear-Quadratic Regulator and {Dynamic Programming} in Matlab. Showed that a moderate movement velocity achieves better accuracy than a slow or fast velocity.}
+    \resumeItem{Movement Learning}
+      {Analyzed 10+GB upper extremity kinematics data via Matlab, R, and SQL. Extracted movement patterns and variability patterns via dimension reduction methods. Showed that healthy movement patterns facilitate movement learning and recovery. }
+    \resumeItem{Movement Learning Prediction}
+      {Developed dynamical {State Space Model with Mixed Effects} to investigate the effects of rehabilitation training, allowing customization of training schedule and prediction of future performance for each individual.}
+
+    % \resumeItem{Customized Vocabulary Review}
+    %   {Wrote an \href{https://apps.ankiweb.net/}{Anki} add-on \href{https://github.com/chunjiw/vocabulous}{\textsf{vocabulous}} to automatically generate vocabulary cards for review with one click. The add-on extracts new words from Google Search History via ``define" keyword; queries definitions through \href{https://developer.oxforddictionaries.com/}{Oxford Dictionary API}.}
+
+  \resumeSubHeadingListEnd
+
+
+% -----------Publications-------------
+% \section{Publications}
+%   \resumeSubHeadingListStart
+%     \item \small{\textbf{Wang C} et al. Spin-orbit coupled spinor Bose-Einstein condensates. \emph{Physical Review Letters}. 105, 160403}
+%     \item \small{\textbf{Wang C} et al. The duration of reaching movement is longer than predicted by minimum variance. \emph{Journal of Neurophysiology}. Vol.116 no.5, 2342-2345}
+%     \item \small{Martinez C, \textbf{Wang C}. Structural constraints on learning in the Neural Network. \emph{Journal of Neurophysiology}. Vol.114 no.5, 2555-2557}
+%   \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
