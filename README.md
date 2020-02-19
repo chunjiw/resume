@@ -1,7 +1,7 @@
 I maintain my resume with this repository. The original template is credited to Sourabh Bajaj, and please read below for his original README.md.
 
 ### Preview
-![Resume(PDF link)](/chunji_wang_resume.pdf)
+[Resume(PDF link)](/chunji_wang_resume.pdf)
 
 ### License
 Format is MIT but all the data is owned by Chunji Wang.
