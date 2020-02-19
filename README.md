@@ -1,4 +1,6 @@
-I maintain my resume with this repository. The original template is credited to Sourabh Bajaj, and please read below for his original README.md.
+This repository contains tex file for a single-page resume.
+At this time it is no longer updated with personal information due to privacy concerns.
+The original template is credited to Sourabh Bajaj, and please read below for his original README.md.
 
 ### Preview
 [Resume(PDF link)](/chunji_wang_resume.pdf)
